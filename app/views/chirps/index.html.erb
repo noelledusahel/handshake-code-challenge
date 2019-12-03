@@ -1,0 +1,15 @@
+<html>
+  <body>
+    <h1>Chirps</h1>
+    <ul >
+      <% @chirps.each do |chirp|  %>
+        <li><%= chirp.id%> -- <%=chirp.text.upcase %></li>
+      <%end%>
+    </ul>
+
+    <%= render "new_chirp" %>
+
+  </body>
+</html>
+
+
